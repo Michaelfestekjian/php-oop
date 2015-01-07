@@ -49,7 +49,7 @@ class person {
 public $name = “michael”;
 public $nationality = “armenian”;
 public $gender = “male”;
-public $size = 5 feet;
+public $size = tall;
 }
 
 class cat {

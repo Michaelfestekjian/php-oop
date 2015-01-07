@@ -39,33 +39,33 @@ $orange2 = new orange();
 //PROPERTIES EXAMPLE 1
         
 class orange {
-public $name = “default name”;
-public $breed = “best breed”;
-public $gender = “male”;
+public $name = “orange”;
+public $color = “orange”;
+public $size = “small”;
 public $price = 0;
 }
 
 class person {
-public $name = “default name”;
-public $breed = “best breed”;
+public $name = “michael”;
+public $nationality = “armenian”;
 public $gender = “male”;
-public $price = 0;
+public $size = 5 feet;
 }
 
 class cat {
-public $name = “default name”;
+public $name = “skooter”;
 public $breed = “best breed”;
 public $gender = “male”;
-public $price = 0;
+public $color = white;
 }
 
-$dog1 = new Dog();
-print $dog1­>name;
+$cat1 = new cat();
+print $cat1­>skooter;
 // default name
 
         
-$cat1 = new cat();
-print $cat1­>scooter;
+$person1 = new person();
+print $person1­>scooter;
 // default name
 
         
@@ -91,47 +91,59 @@ ________________________________________________________________________________
 
 // EXAMPLE 1
 class cat {
-public $firstName;
-public $lastName;
-public $breed;
-function __construct($title, $firstName, $lastName, $breed) {
-$this­>firstName = $firstName;
-$this­>lastName = $lastName;
-$this­>breed = $breed;
+public $skooter;
+public $dadada;
+public $white;
+function __construct($title, $skooter, $dadada, $white) {
+$this­>firstName = $skooter;
+$this­>lastName = $skooter;
+$this­>color = $white;
 }
 function getName() {
-return “{$this­>firstName}” .
-“{$this­>lastName}”;
+return “{$this­>skooter}” .
+“{$this­>dadada}”;
 }
 }
 
 
 class person {
-public $firstName;
-public $lastName;
+public $michael;
+public $festekjian;
 public $breed;
-function __construct($title, $firstName, $lastName, $breed) {
-$this­>firstName = $firstName;
-$this­>lastName = $lastName;
+function __construct($title, $michae;, $Festekjian, $breed) {
+$this­>firstName = $michael;
+$this­>lastName = $festekjian;
 $this­>breed = $breed;
 }
 function getName() {
-return “{$this­>firstName}” .
-“{$this­>lastName}”;
+return “{$this­>michael}” .
+“{$this­>festekjian}”;
 }
 }
 
 class lion {
-public $firstName;
-public $lastName;
+public $spike;
+public $bababa;
 public $breed;
-function __construct($title, $firstName, $lastName, $breed) {
-$this­>firstName = $firstName;
-$this­>lastName = $lastName;
+function __construct($title, $spike, $bababa, $breed) {
+$this­>firstName = $spike;
+$this­>lastName = $bababa;
 $this­>breed = $breed;
 }
 function getName() {
-return “{$this­>firstName}” .
-“{$this­>lastName}”;
+return “{$this­>spike}” .
+“{$this­>bababa}”;
 }
 }
+
+
+$cat1 = new (“scooter”, “dada”, “uglycat”);
+print “cat 1: {$cat1­>getName()}\n;
+
+
+$orange1 = new orange(“orange”, “baba”, “fresh orange”);
+print “orange 1: {$orange1­>getName()}\n;
+
+
+$person1 = new person(“kobe”, “coco”, “uglyperson”);
+print “person 1: {$person1­>getName()}\n;

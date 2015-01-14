@@ -42,21 +42,21 @@ class orange {
 public $name = “orange”;
 public $color = “orange”;
 public $size = “small”;
-public $price = 0;
+public $price = "0";
 }
 
 class person {
 public $name = “michael”;
 public $nationality = “armenian”;
 public $gender = “male”;
-public $size = tall;
+public $size = "tall";
 }
 
 class cat {
 public $name = “skooter”;
 public $breed = “best breed”;
 public $gender = “male”;
-public $color = white;
+public $color = "white";
 }
 
 $cat1 = new cat();

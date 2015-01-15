@@ -1,4 +1,4 @@
-       
+       <?php
 
         class iphone {
         public $firtname;
@@ -7,25 +7,25 @@
         public $company;
         public $weight;
         
-        function __construct($scientificName, $firstName, $lastName, $company, $weight, $ring,) {
-                $this->scientificName = $scientificName;
-                $this->firstName = $firstName;
-                $this->firstname = $dirstname;
-                $this->lastName = $lastName;
-                $this->lastName = $weight;
-                $this->company = $company;
+        function  __construct($scientificName, $firstName, $lastName, $company, $weight, $ring) {
+                $this->scientificName = $scientificName;
+                $this->firstName = $firstName;
+                $this->lastName = $lastName;
+                $this->lastName = $company;
+                $this->company = $weight;
+                $this->ring = $ring;
                 
         }
         
         function getname() {
-        return “This is my“ . $this->firstName .
+        return “This is my“ . $this->firstName.
             “ and last ” . $this->lastName .
             “ and this is my scientificname“ . $this->scientificName . “ .”;
             
             }
 }
 class cat extends iphone{
-    function__construct($scientificName, $firstName, $lastName, $company, $weight, $ring){
+    function  __construct($scientificName, $firstName, $lastName, $company, $weight, $ring){
         parent:__construct($scientificName, $firstName, $lastName, $company, $weight);
         $this->ring = $ring;
         }
@@ -34,13 +34,10 @@ class cat extends iphone{
         
         $iphone = new iphone(“iphone”, “jo”, “white”, “apple/verzion”, 15, true);
         print “iphone 1 is a ” . $iphone>getName();
-        
-        
-        
-        
-        _______________________________________________________________________________________________________________________________________________
+                ?>
+_______________________________________________________________________________________________________________________________________________
     
-        
+        <?php
         
         class lion {
         public $firtname;
@@ -67,7 +64,7 @@ class cat extends iphone{
             }
 }
 class cat extends lion{
-    function__construct($scientificName, $firstName, $lastName, $gender, $weight, $rarr){
+    function  __construct($scientificName, $firstName, $lastName, $gender, $weight, $rarr){
         parent:__construct($scientificName, $firstName, $lastName, $gender, $weight);
         $this->rarr = $rarr;
         }
@@ -77,10 +74,10 @@ class cat extends lion{
         $lion = new lion(“lion”, “jo”, “white”, “male”, 15, true);
         print “lion 1 is a ” . $lion>getName();
         
-        
+        ?>
         
 _______________________________________________________________________________________________________________________________________________________________
-
+<?php
 
     class headphones {
         public $firtname;
@@ -107,7 +104,7 @@ ________________________________________________________________________________
             }
 }
 class cat extends headphones{
-    function__construct($scientificName, $firstName, $lastName, $company, $weight, $music){
+    function  __construct($scientificName, $firstName, $lastName, $company, $weight, $music){
         parent:__construct($scientificName, $firstName, $lastName, $brand, $weight);
         $this->music = $music;
         }
@@ -117,3 +114,4 @@ class cat extends headphones{
         
         $headphones = new headphones(“headphones”, “jo”, “white”, “apple”, 15, true);
         print “headphones 1 is a ” . $cat>getName();
+                ?>
